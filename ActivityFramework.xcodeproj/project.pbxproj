@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		6FC2CB5322F85DCA00931CAC /* ActivityFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FC2CB5122F85DCA00931CAC /* ActivityFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FC2CB5C22F85E1E00931CAC /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC2CB5A22F85E1E00931CAC /* Request.swift */; };
+		6FC2CB5D22F85E1E00931CAC /* NetworkConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC2CB5B22F85E1E00931CAC /* NetworkConnector.swift */; };
+		6FC2CB6022F85E3F00931CAC /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC2CB5F22F85E3F00931CAC /* Cell.swift */; };
+		6FC2CB6622F861F200931CAC /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC2CB6522F861F200931CAC /* DeviceInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6FC2CB4E22F85DCA00931CAC /* ActivityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ActivityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FC2CB5122F85DCA00931CAC /* ActivityFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityFramework.h; sourceTree = "<group>"; };
 		6FC2CB5222F85DCA00931CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FC2CB5A22F85E1E00931CAC /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		6FC2CB5B22F85E1E00931CAC /* NetworkConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConnector.swift; sourceTree = "<group>"; };
+		6FC2CB5F22F85E3F00931CAC /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		6FC2CB6522F861F200931CAC /* DeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +54,38 @@
 		6FC2CB5022F85DCA00931CAC /* ActivityFramework */ = {
 			isa = PBXGroup;
 			children = (
+				6FC2CB6422F861DE00931CAC /* Controller */,
+				6FC2CB5E22F85E2F00931CAC /* Protocol */,
+				6FC2CB5922F85E1200931CAC /* Network */,
 				6FC2CB5122F85DCA00931CAC /* ActivityFramework.h */,
 				6FC2CB5222F85DCA00931CAC /* Info.plist */,
 			);
 			path = ActivityFramework;
+			sourceTree = "<group>";
+		};
+		6FC2CB5922F85E1200931CAC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6FC2CB5B22F85E1E00931CAC /* NetworkConnector.swift */,
+				6FC2CB5A22F85E1E00931CAC /* Request.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6FC2CB5E22F85E2F00931CAC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6FC2CB5F22F85E3F00931CAC /* Cell.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		6FC2CB6422F861DE00931CAC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6FC2CB6522F861F200931CAC /* DeviceInfo.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +131,7 @@
 				TargetAttributes = {
 					6FC2CB4D22F85DCA00931CAC = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -130,6 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FC2CB5D22F85E1E00931CAC /* NetworkConnector.swift in Sources */,
+				6FC2CB5C22F85E1E00931CAC /* Request.swift in Sources */,
+				6FC2CB6022F85E3F00931CAC /* Cell.swift in Sources */,
+				6FC2CB6622F861F200931CAC /* DeviceInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +302,7 @@
 		6FC2CB5722F85DCA00931CAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.ActivityFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +329,7 @@
 		6FC2CB5822F85DCA00931CAC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
