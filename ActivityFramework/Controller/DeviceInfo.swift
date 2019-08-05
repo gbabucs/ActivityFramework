@@ -12,7 +12,7 @@ import UIKit
 public struct DeviceInfo {
     public struct Orientation {
         // indicate current device is in the LandScape orientation
-        static var isLandscape: Bool {
+       public static var isLandscape: Bool {
             get {
                 return UIDevice.current.orientation.isValidInterfaceOrientation
                     ? UIDevice.current.orientation.isLandscape
@@ -20,7 +20,7 @@ public struct DeviceInfo {
             }
         }
         // indicate current device is in the Portrait orientation
-        static var isPortrait: Bool {
+        public static var isPortrait: Bool {
             get {
                 return UIDevice.current.orientation.isValidInterfaceOrientation
                     ? UIDevice.current.orientation.isPortrait
