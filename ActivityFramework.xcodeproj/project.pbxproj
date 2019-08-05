@@ -12,6 +12,7 @@
 		6FC2CB5D22F85E1E00931CAC /* NetworkConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC2CB5B22F85E1E00931CAC /* NetworkConnector.swift */; };
 		6FC2CB6022F85E3F00931CAC /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC2CB5F22F85E3F00931CAC /* Cell.swift */; };
 		6FC2CB6622F861F200931CAC /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC2CB6522F861F200931CAC /* DeviceInfo.swift */; };
+		6FC2CB6822F8679500931CAC /* ActivityFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6FC2CB6722F8679500931CAC /* ActivityFramework.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6FC2CB5B22F85E1E00931CAC /* NetworkConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConnector.swift; sourceTree = "<group>"; };
 		6FC2CB5F22F85E3F00931CAC /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		6FC2CB6522F861F200931CAC /* DeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		6FC2CB6722F8679500931CAC /* ActivityFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ActivityFramework.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		6FC2CB4422F85DCA00931CAC = {
 			isa = PBXGroup;
 			children = (
+				6FC2CB6722F8679500931CAC /* ActivityFramework.podspec */,
 				6FC2CB5022F85DCA00931CAC /* ActivityFramework */,
 				6FC2CB4F22F85DCA00931CAC /* Products */,
 			);
@@ -157,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FC2CB6822F8679500931CAC /* ActivityFramework.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +240,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -293,6 +298,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -321,7 +327,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -347,7 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sample.ActivityFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

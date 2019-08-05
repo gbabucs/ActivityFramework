@@ -17,9 +17,9 @@ Pod::Spec.new do |s|
   s.license               = "BABU"
   s.author                = { 'babu' => 'gbabucs@gmail.com' }
   s.source                = { :git => 'https://github.com/gbabucs/ActivityFramework.git', :tag => s.version }
-  s.platform              = :ios, "11.0"
+  s.platform              = :ios, "12.2"
+    s.swift_version = '4.2'
   s.source_files          = 'ActivityFramework/**/*.{swift}'
-  s.resources             = ['ActivityFramework/*.{storyboard,xib,json,html,jpg}', 'ActivityFramework/Asset.xcassets']
   s.preserve_paths        = 'ActivityFramework/*'
 
 end
